@@ -6,7 +6,7 @@
 
 header{
     display: block;
-    height:80vh;
+    height:90vh;
     width: 100%;
     background: center center no-repeat url("https://images.unsplash.com/photo-1559511260-66a654ae982a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1692&q=80");
     background-size: cover;
@@ -78,27 +78,91 @@ nav .nav-bottom {
     transform: translate(-50%, -40%);
 
     color: #f4f4f4;
-    background: rgba(100, 100, 100, 0.5);
+    background: rgba(100, 100, 100, 0.6);
+    border-radius: 5px;
     width:80%;
-    height: 20rem;
+    height:30rem;
     
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-gap: 1rem;
     justify-items: center;
     align-items: center;
 };
 
 
 .key-strength {
+    padding:2rem;
 
 }
 
-.photo-container{
-
-}
 .intro img{
-    max-height:20rem;
-    max-width:20rem;
+    max-height:30rem;
+    max-width:30rem;
+    box-shadow: 15px 15px 30px rgba(0,0,0,0.3);
 }
 
+.about-me{
+    font-size: 0.9rem;
+    padding: 1rem 2rem;
+}
+
+@media(max-width:1550px){
+    .intro{
+        display: grid;
+        grid-template-rows: 2fr;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+    .intro img{
+        max-height:15rem;
+        max-width:15rem;
+        box-shadow: 15px 15px 30px rgba(0,0,0,0.3);
+    }
+    .about-me{
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+    
+}    
+@media(max-width:600px){
+    nav{
+        height: 8rem;
+    }
+    .nav-container {
+        width: 90%;
+    }
+    /* Navigation */
+    .logo-container h2{
+        font-size: 1rem;
+        margin-bottom:0.3rem;
+    }
+    .nav-links{
+        font-size: 0.7rem;
+    }
+    .nav-links .nav-link{
+        padding: 0.25rem 0.6rem;
+    }
+    /* Intro */
+    .intro{
+        display: grid;
+        grid-template-rows: 2fr;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+    .intro img{
+        max-height:15rem;
+        max-width:15rem;
+        box-shadow: 15px 15px 30px rgba(0,0,0,0.3);
+    }
+    .about-me{
+        font-size: 0.6rem;
+        padding: 1rem;
+    }
+    
+}    
