@@ -6,7 +6,7 @@
 
 header{
     display: block;
-    height:90vh;
+    height:100vh;
     width: 100%;
     background: center center no-repeat url("https://images.unsplash.com/photo-1559511260-66a654ae982a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1692&q=80");
     background-size: cover;
@@ -93,7 +93,7 @@ nav .nav-bottom {
 
 
 .key-strength {
-    padding:2rem;
+    padding:1rem;
 
 }
 
@@ -108,7 +108,7 @@ nav .nav-bottom {
     padding: 1rem 2rem;
 }
 
-@media(max-width:1550px){
+@media(max-width:1400px){
     .intro{
         display: grid;
         grid-template-rows: 2fr;
@@ -126,9 +126,15 @@ nav .nav-bottom {
         font-size: 0.8rem;
         padding: 1rem;
     }
+    .key-strength {
+        display:none;
     
+    }
 }    
 @media(max-width:600px){
+    .header{
+        height: 95vh;
+    }
     nav{
         height: 8rem;
     }
@@ -163,6 +169,11 @@ nav .nav-bottom {
     .about-me{
         font-size: 0.6rem;
         padding: 1rem;
+    }
+
+    .key-strength {
+        display:none;
+    
     }
     
 }    
