@@ -4,6 +4,13 @@
     box-sizing: 0;
 }
 
+a:hover{
+    text-decoration: none;
+}
+.under-line{
+    border-bottom: #f4f4f4 solid 4px;
+}
+
 header{
     display: block;
     height:100vh;
@@ -59,6 +66,9 @@ nav .nav-bottom {
     margin-bottom: 0;
     color: #f4f4f4;
 }
+.nav-bottom .logo-container h2 a{
+    color: #f4f4f4;
+}
 
 .nav-bottom .nav-links{
     flex:50;
@@ -69,18 +79,18 @@ nav .nav-bottom {
 }
 
 
-
-/* Intro */
-
-.intro{
+.showcase-container {
     position:absolute;
     top:50%; left:50%;
     transform: translate(-50%, -40%);
-
-    color: #f4f4f4;
-    background: rgba(100, 100, 100, 0.6);
-    border-radius: 5px;
     width:80%;
+}
+
+/* Landing Page */
+.intro{
+    color: #f4f4f4;
+    background: rgba(100, 100, 100, 0.7);
+    border-radius: 5px;
     height:30rem;
     
     display: grid;
@@ -90,7 +100,6 @@ nav .nav-bottom {
     justify-items: center;
     align-items: center;
 };
-
 
 .key-strength {
     padding:1rem;
@@ -107,6 +116,25 @@ nav .nav-bottom {
     font-size: 0.9rem;
     padding: 1rem 2rem;
 }
+
+
+
+
+
+/* Skill */
+
+.skill{
+    background-color: antiquewhite;
+    height: 10vh;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+
+
+
+
+
 
 @media(max-width:1400px){
     .intro{
