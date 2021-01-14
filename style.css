@@ -116,6 +116,7 @@ nav .nav-bottom {
         grid-gap: 1rem;
         justify-items: center;
         align-items: center;
+        height:35rem;
     }
     .intro img{
         max-height:15rem;
