@@ -7,7 +7,13 @@
 a:hover{
     text-decoration: none;
 }
-.under-line{
+
+
+.selection-control{
+    
+}
+
+.selection-control:hover{
     border-bottom: #f4f4f4 solid 4px;
 }
 
@@ -124,10 +130,15 @@ nav .nav-bottom {
 /* Skill */
 
 .skill{
-    background-color: antiquewhite;
-    height: 10vh;
+    color: #f4f4f4;
+    background: rgba(100, 100, 100, 0.7);
+    height: 12vh;
     width: 100%;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    font-size:1vw;
+    text-align: center;
+    border-radius: 5px;
 }
 
 
@@ -159,6 +170,10 @@ nav .nav-bottom {
         display:none;
     
     }
+    /* Skill */
+    .skill{
+        font-size:1.2vw;
+    }
 }    
 @media(max-width:600px){
     .header{
@@ -181,6 +196,7 @@ nav .nav-bottom {
     .nav-links .nav-link{
         padding: 0.25rem 0.6rem;
     }
+
     /* Intro */
     .intro{
         display: grid;
@@ -205,4 +221,8 @@ nav .nav-bottom {
     
     }
     
+    /* Skill */
+    .skill{
+        font-size:2.2vw;
+    }
 }    
