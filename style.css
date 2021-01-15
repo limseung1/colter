@@ -28,6 +28,8 @@ header{
     position:relative;
 }
 
+
+/* Navigation */
 nav{
     width:100%;
     background: rgba(100, 100, 100, 0);
@@ -88,7 +90,7 @@ nav .nav-bottom {
 
 .showcase-container {
     position:absolute;
-    top:50%; left:50%;
+    top:49%; left:50%;
     transform: translate(-50%, -40%);
     width:80vw;
 }
@@ -125,9 +127,6 @@ nav .nav-bottom {
 }
 
 
-
-
-
 /* Skill */
 #skill-page{
     display: none;
@@ -137,18 +136,73 @@ nav .nav-bottom {
     color: #f4f4f4;
     background: rgba(100, 100, 100, 0.7);
     height: 12vh;
-    width: 100%;
-    margin: 1.5rem 0;
+    max-width: 1200px;
+    margin: 2rem auto;
     padding: 1rem;
     font-size:1rem;
     text-align: center;
     border-radius: 5px;
 }
 
+/* Education */ 
+#education-page{
+    display:none;
+}
+
+.educations{
+    max-width: 80vw;
+    margin: 0 auto;
+    color:#f4f4f4;  
+}
+
+.timeline-area {
+    max-width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
 
 
+.education {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap:3rem;
+    height: 14vh;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+    
+}
 
+.timeline-date {
+    padding:0;
+    margin:0 1rem 0 0;
+    text-align:end;
 
+}
+
+.timeline-content {
+    position:relative;
+    background: rgba(100, 100, 100, 0.7);
+    max-width: 100%;
+    height: 100%;
+    text-align:left;
+    padding: 1rem;
+}
+
+.timeline-content:after {
+    position: absolute;
+    left: -2rem;
+    top: -18%;
+    width: 5px;
+    background: #f4f4f4;
+    content: "";
+    height: 140%;
+    display: block;
+  }
 
 
 @media(max-width:1400px){
@@ -235,4 +289,16 @@ nav .nav-bottom {
         font-size: 3vw;
     }
 
+    /* Education */
+    .education h4{
+        font-size: 0.7rem;
+    }
+  
+    .education h5{
+        font-size: 0.6rem;
+    }
+  
+    .education .timeline-date{
+        font-size: 0.5rem;
+    }
 }    
