@@ -171,7 +171,7 @@ nav .nav-bottom {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap:3rem;
-    height: 14vh;
+    height: 12vh;
     align-items: center;
     justify-content: center;
     min-width: 300px;
