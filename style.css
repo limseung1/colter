@@ -390,6 +390,7 @@ nav .nav-bottom {
     .education .timeline-date-mobile{
         display:block;
         font-size: 0.5rem;
+        margin: 0;
     }
     .date-container::after{
         left: 100%;
@@ -402,14 +403,24 @@ nav .nav-bottom {
         position: absolute;
         left: 0%;
         transform: translate(-100%);
-        height: 115%;
-        top: -5%;
+        height: 100%;
+        top: 0%;
         width: 3px;
         background: #f4f4f4;
         content: "";
         display: block;
     }
-    
+    .date-container-stretch:before {
+        position: absolute;
+        left: 0%;
+        transform: translate(-100%);
+        height: 180%;
+        top: -40%;
+        width: 3px;
+        background: #f4f4f4;
+        content: "";
+        display: block;
+      }
     /* Circle */
     .date-container::after{
         position: absolute;
