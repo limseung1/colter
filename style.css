@@ -140,7 +140,7 @@ nav .logo-container a{
 }
 
 .nav-bottom .nav-links{
-    flex:50;
+    max-width:100%;
 }
 
 .nav-link a{
