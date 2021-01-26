@@ -23,6 +23,7 @@ document.getElementById("experience-tab").addEventListener("click", e => {
 
 // Copy to Clipboard
 function copy_to_clipboard(value) {
+    document.querySelector(".clipboard-msg").style["visibility"] = "visible"
     document.querySelector(".clipboard-msg").innerHTML = "Copied!"
     var tempInput = document.createElement("input");
     tempInput.value = value;
@@ -30,6 +31,10 @@ function copy_to_clipboard(value) {
     tempInput.select();
     document.execCommand("copy");
     document.body.removeChild(tempInput);
+
+    setTimeout(function(){
+        document.querySelector(".clipboard-msg").style["visibility"] = "hidden"
+    }, 2000);
 
   }
   

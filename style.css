@@ -376,6 +376,10 @@ nav .logo-container a{
         padding: 0.25rem 0.5rem;
         font-weight: 400;
     }
+    .clipboard-msg{
+        width:3.5rem;
+        border-radius: 3px;
+    }
 
     /* Landing Page */
     .photo-container img{
