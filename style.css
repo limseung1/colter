@@ -19,6 +19,7 @@ body{
 .body-content{
     overflow-y: scroll;
     height:100%;
+    overflow-x:hidden;
 }
 
 /* fonts */
