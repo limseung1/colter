@@ -345,8 +345,8 @@ nav .logo-container a{
 
     /* Landing Page */
     .photo-container img{
-        width:100%;
-        height: 100%;
+        /* width:100%;
+        height: 100%; */
     }
     .screen{
         display:none;
