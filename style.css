@@ -32,18 +32,56 @@ li{
 /* Utility */
 
 .bg-glass{
-    background: rgba(50, 50, 50, 0.5);
+    background: rgba(50, 50, 50, 0.7);
+}
+.bg-glass-light{
+    background: rgba(68, 68, 68, 0.3);
 }
 
 .border-glass{
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.7);
 }
-
+.border-bottom {
+    border-width:2px !important;
+}
+.border-top {
+    border-width:2px !important;
+}
 a:hover{
     text-decoration: none;
 }
 
-/* fonts */
+.clip{
+    position:relative;
+}
+.clipboard-msg{
+    visibility: hidden;
+    position:absolute;
+    top:90%;
+    left:0%;
+    background-color: #191919;
+    padding:0.55rem;
+    font-size: 0.7rem;
+    word-wrap:inherit;
+    width:6rem;
+    border-radius: 3px;
+}
+.clipboard-msg::after{
+    content: '';
+    width: 15px; 
+    height: 15px; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 5px solid rgb(0, 0, 0);
+    position: absolute;
+    left:17%;
+    top:-40%;
+
+}
+.clip:hover > .clipboard-msg{
+    visibility: visible;
+}
+
 
 
 /* Navigation */
@@ -74,11 +112,12 @@ nav{
     justify-content: center;
     margin-bottom: 0;
     color: #f4f4f4;
+    font-weight: 500;
 }
 
 nav .nav-top {
     display:flex;
-    border-bottom: #f4f4f4 solid 2px;
+    /* border-bottom: #f4f4f4 solid 2px; */
     margin: auto;
 }
 .mobile{
@@ -115,15 +154,15 @@ nav .logo-container a{
     border-bottom: #f4f4f4 solid 4px;
 }
 
+.showcase-container{
+    max-width: 80vw;
+    margin: 0 auto;
+    color:#f4f4f4;
+}
 
 /* Showcase Section */
 
 /* Landing Page */
-.landing{
-    max-width: 80vw;
-    margin: 0 auto;
-    color:#f4f4f4;  
-}
 .key-strength {
     margin:0;
 }
@@ -187,7 +226,6 @@ nav .logo-container a{
 .timeline-content {
     position:relative;
     border-radius: 5px;
-    background: rgba(50, 50, 50, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.7);
     max-width: 100%;
     height: 100%;
@@ -310,21 +348,10 @@ nav .logo-container a{
     display:none;
 }
 
-.skill{
-    color: #f4f4f4;
-    height: 12vh;
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 1rem;
-    font-size:1rem;
-    text-align: center;
-    border-radius: 5px;
-}
 
 
-@media(max-width:900px){
 
-    
+
 @media(max-width:600px){
     /* fonts */
     h2{
@@ -350,8 +377,8 @@ nav .logo-container a{
 
     /* Landing Page */
     .photo-container img{
-        /* width:100%;
-        height: 100%; */
+        width:75%;
+        /* height: 100%; */
     }
     .screen{
         display:none;

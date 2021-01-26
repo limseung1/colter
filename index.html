@@ -9,20 +9,26 @@
     <title>Colter Long</title>
 </head>
 <body>
-    <div class="body-content bg-glass">
+    <div class="body-content bg-glass-light">
 
         <!-- Nav Bar -->
         <header class="container">
             <nav>
                 <div class="nav-container">
-                    <div class="nav-top pb-1">
+                    <div class="nav-top pb-1 border-bottom">
                         <div class="logo-container mr-auto">
                             <h2><a href="index.html">Colter Long</a></h2>
                         </div>
                         <ul class="nav-links">
                             <li class="nav-link"><a href="https://www.facebook.com/cj.long.5283"><i class="fab fa-facebook-square"></i></a></li>
                             <li class="nav-link"><a href="https://www.linkedin.com/in/colter-j-long"><i class="fab fa-linkedin"></i></a></li>
-                            <li class="nav-link"><a href=""><i class="fas fa-envelope"></i></a></li>
+
+                            <!-- The text field -->
+                            <!-- <input type="text" value="Hello World" id="myInput"> -->
+                            <li class="nav-link clip">
+                                <button id="Copy" style="background:none; border:none; color:#f4f4f4" onclick="copy_to_clipboard('colterjlong@gmail.com')"><i class="fas fa-envelope"></i></button>
+                                <span class="clipboard-msg">Copy Email ?</span>
+                            </li>
                             <li class="nav-link screen"><a href="#">Phone: (778)-320-2656</a></li>
                             <li class="nav-link mobile"><a href=""><i class="fa fa-phone"></i></a></li>
                         </ul>
@@ -42,21 +48,20 @@
 
         <!-- Landing Page -->
         <section id="landing-page" class="container p-2 my-lg-5">
-            <div class="landing">
-
+            <div class="showcase-container">
                 <div class="row justify-content-center align-items-center">
                     <div class="about-me m-3 p-4 col-lg-7 bg-glass border-glass rounded">
                         <div class="h-flex align-items-center">
                             <h2 class="mr-auto">About Me</h2>
                             <ul class="key-strength d-flex align-items-center">
-                                <li class="m-1">Individualization</li>
-                                <li class="m-1">Empathy</li>
-                                <li class="m-1">Context</li>
-                                <li class="m-1">Futuristic</li>
-                                <li class="m-1">Strategic</li>
+                                <li class="mr-3">Individualization</li>
+                                <li class="mr-3">Empathy</li>
+                                <li class="mr-3">Context</li>
+                                <li class="mr-3">Futuristic</li>
+                                <li class="mr-3">Strategic</li>
                             </ul>
                         </div>
-                        <p>I am currently a student at the University of British Columbia (UBC) pursuing a career as a licensed clinical counsellor. My interests include trauma-informed practice, addictions, career counselling & coaching, and increasing access to effective mental healthcare.</p>
+                        <p class="mt-3">I am currently a student at the University of British Columbia (UBC) pursuing a career as a licensed clinical counsellor. My interests include trauma-informed practice, addictions, career counselling & coaching, and increasing access to effective mental healthcare.</p>
                         <p>Working with others from marginalized backgrounds has allowed me to see beyond my struggles and learn how others thrive amidst adversity. As a UBC student, I pay particular attention to content and research that investigates trauma because I believe this to be a core issue which many other problems stem from. In my profession as a GS Career Student Advisor, at UBC’s Centre for Student Involvement & Careers (CISC), I am interested in effective techniques that will support adults in making insightful transitions towards meaningful and fulfilling lives.</p>
                     </div>
                     <div class="photo-container d-flex justify-content-center col-lg-4">
@@ -75,7 +80,7 @@
                         <div class="date-container current">
                                 <p class="timeline-date date-decoration">SEPTEMBER 2019 – NOVEMBER 2021</p>
                         </div>
-                        <div class="timeline-content">
+                        <div class="timeline-content bg-glass">
                             <h4>Masters of Education in Counselling Psychology</h4>
                             <h5>University of British Columbia, Vancouver</h5>
                             <p class="timeline-date-mobile date-decoration">SEPTEMBER 2019 – NOVEMBER 2021</p>
@@ -85,7 +90,7 @@
                         <div class="date-container date-container-stretch">
                             <p class="timeline-date date-decoration">SEPTEMBER 2015 - APRIL 2017</h5>
                         </div>
-                        <div class="timeline-content">
+                        <div class="timeline-content bg-glass">
                             <h4>Bachelor of Arts in Psychology</h4>
                             <h5>University of British Columbia, Vancouver</h5>
                             <p class="timeline-date-mobile date-decoration">SEPTEMBER 2015 - APRIL 2017</h5>
@@ -95,7 +100,7 @@
                         <div class="date-container">
                             <p class="timeline-date date-decoration">JANUARY 2014 - AUGUST 2015</h5>
                         </div>
-                        <div class="timeline-content">
+                        <div class="timeline-content bg-glass">
                             <h4>Associate of Arts in Psychology</h4>
                             <h5>Langara College, Vancouver </h5>
                             <p class="timeline-date-mobile date-decoration">JANUARY 2014 - AUGUST 2015</h5>
@@ -105,7 +110,7 @@
                         <div class="date-container date-container-stretch">
                             <p class="timeline-date date-decoration">SEPTEMBER 2006 - APRIL 2008</h5>
                         </div>
-                        <div class="timeline-content">
+                        <div class="timeline-content bg-glass">
                             <h4>Associate Degree of Nonprofit Business (incomplete)</h4>
                             <h5>Mount Royal College, Calgary </h5>
                             <p class="timeline-date-mobile date-decoration">SEPTEMBER 2006 - APRIL 2008</h5>
@@ -115,7 +120,7 @@
                         <div class="date-container">
                             <p class="timeline-date date-decoration">SEPTEMBER 2001 - JUNE 2004</h5>
                         </div>
-                        <div class="timeline-content">
+                        <div class="timeline-content bg-glass">
                             <h4>High School Diploma</h4>
                             <h5>William E. Hay Composite High School, Stettler</h5>
                             <p class="timeline-date-mobile date-decoration">SEPTEMBER 2001 - JUNE 2004</h5>
@@ -128,8 +133,8 @@
          <!-- Experience -->
          <section id="experience-page" class="container p-2 my-lg-5">
             <div class="showcase-container experiences">
-                <div class="row">
-                    <div class="col-md-12">
+                <div class="row justify-content-center">
+                    <div class="bg-glass border-glass p-4 col-md-10 my-3">
                         <h4>Centre for Student Involvement & Careers, UBC</h4>
                         <ul>
                             <li>Conducted customized, one-to-one 45-minute advising sessions with on average four students per shift on topics ranging from educational decisions, career exploration, and job search</li>
@@ -139,7 +144,7 @@
                             <li>Adjudicated over 40 Work Learn proposals submitted by UBC faculties to hire student workers</li>
                         </ul>
                     </div>
-                    <div class="col-md-12">
+                    <div class="bg-glass border-glass p-4 col-md-10 my-3">
                         <h4>Metro Vancouver Aboriginal Executive Council, Vancouver</h4>
                         <ul>
                             <li>Established and lead a community of practice of over 170 public service professionals to support Indigenous organizations with their response to Metro Vancouver’s overdose emergency</li>
@@ -154,7 +159,7 @@
                             <li>Collaborated with web-developer to create an online Indigenous resource directory comprehensive of Metro Vancouver’s mental health and addictions services</li>
                         </ul>
                     </div>
-                    <div class="col-md-12">
+                    <div class="bg-glass border-glass p-4 col-md-10 my-3">
                         <h4>Crisis Intervention & Suicide Prevention Centre, Vancouver</h4>
                         <ul>
                             <li>Supervised, trained, and provided individualized feedback to over 300+ crisis line workers answering calls from provincial suicide and crisis hotlines </li>
@@ -170,30 +175,32 @@
          <!-- Skill -->
          <section id="skill-page" class="container p-2 my-lg-5">
             <div class="showcase-container skills">
-                <div class="skill">
-                    <h6>Individual Counselling</h6>
-                    <p>Completed 16 hours of supervised individual counselling over Zoom platform at UBC’s Psychological and Counselling Services Training Centre</p>
-                </div>
-                <div class="skill">
-                    <h6>Suicide Prevention & Crisis Intervention</h6>
-                    <p>Completed over 500 hours of volunteer work as a crisis line operator and served as a staff member for two years at the Vancouver Crisis Centre to increase access to mental health support and reduce suicide incidents in BC</p>
-                </div>
-                <div class="skill">
-                    <h6>Substance-Use Research</h6>
-                    <p>Completed knowledge translation project by conducting four focus groups with Indigenous residents of Vancouver’s Eastside who have experiences with substance use to report unique needs, service barriers, and recommendations determined by Indigenous people accessing services</p>
-                </div>
-                <div class="skill">
-                    <h6>Indigenous Public Health</h6>
-                    <p>Established and led a community of practice and information exchange of over 170 participants including representatives from SFU, UBC, VCH, FNHA, BCCDC and PHSA to form a unified overdose response strategy and promote wrap-around service delivery</p>
-                </div>
-                <div class="skill">
-                    <h6>Gender Issues</h6>
-                    <p>Worked with four individuals to provide each with six peer life coaching sessions to support them navigate issues commonly associated with gay men, such as family estrangement</p>
+                <div class="row justify-content-center align-items-center">
+                    <div class="bg-glass border-glass m-2 pt-4 pb-4 pt-3 col-md-5">
+                        <h6>Individual Counselling</h6>
+                        <p>Completed 16 hours of supervised individual counselling over Zoom platform at UBC’s Psychological and Counselling Services Training Centre</p>
+                    </div>
+                    <div class="bg-glass border-glass m-2 p-3 col-md-5">
+                        <h6>Suicide Prevention & Crisis Intervention</h6>
+                        <p>Completed over 500 hours of volunteer work as a crisis line operator and served as a staff member for two years at the Vancouver Crisis Centre to increase access to mental health support and reduce suicide incidents in BC</p>
+                    </div>
+                    <div class="bg-glass border-glass m-2 p-3 col-md-5">
+                        <h6>Substance-Use Research</h6>
+                        <p>Completed knowledge translation project by conducting four focus groups with Indigenous residents of Vancouver’s Eastside who have experiences with substance use to report unique needs, service barriers, and recommendations determined by Indigenous people accessing services</p>
+                    </div>
+                    <div class="bg-glass border-glass m-2 p-3 col-md-5">
+                        <h6>Indigenous Public Health</h6>
+                        <p>Established and led a community of practice and information exchange of over 170 participants including representatives from SFU, UBC, VCH, FNHA, BCCDC and PHSA to form a unified overdose response strategy and promote wrap-around service delivery</p>
+                    </div>
+                    <div class="bg-glass border-glass m-2 p-3 col-md-5">
+                        <h6>Gender Issues</h6>
+                        <p>Worked with four individuals to provide each with six peer life coaching sessions to support them navigate issues commonly associated with gay men, such as family estrangement</p>
+                    </div>
                 </div>
             </div>
          </section>    
         
-         <footer class="">
+         <footer class="my-4 p-3">
              <div class="container border-top">
                  <h1 class="text-center">Footer</h1>
              </div>
