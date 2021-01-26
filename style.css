@@ -119,6 +119,11 @@ nav .logo-container a{
 /* Showcase Section */
 
 /* Landing Page */
+.landing{
+    max-width: 80vw;
+    margin: 0 auto;
+    color:#f4f4f4;  
+}
 .key-strength {
     margin:0;
 }
