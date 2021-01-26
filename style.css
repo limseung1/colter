@@ -373,13 +373,14 @@ nav .logo-container a{
 
     /* Navigation */
     .nav-links .nav-link{
-        padding: 0.25rem 0.6rem;
+        padding: 0.25rem 0.5rem;
+        font-weight: 400;
     }
 
     /* Landing Page */
     .photo-container img{
         width:75%;
-        /* height: 100%; */
+        height: 75%;
     }
     .screen{
         display:none;
