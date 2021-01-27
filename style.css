@@ -66,6 +66,7 @@ a:hover{
     word-wrap:inherit;
     width:6rem;
     border-radius: 3px;
+    text-align: center;
 }
 .clipboard-msg::after{
     content: '';
@@ -78,11 +79,23 @@ a:hover{
     left:17%;
     top:-40%;
 
+
 }
 .clip:hover > .clipboard-msg{
     visibility: visible;
 }
 
+.list-none {
+    list-style: none;
+}
+.list-square {
+    list-style:square;
+}
+
+.date-tag{
+    display:inline-block;
+    background:rgba(70,70,130);
+}
 
 
 /* Navigation */
@@ -118,7 +131,6 @@ nav{
 
 nav .nav-top {
     display:flex;
-    /* border-bottom: #f4f4f4 solid 2px; */
     margin: auto;
 }
 .mobile{
@@ -173,14 +185,11 @@ nav .logo-container a{
     color:rgb(211, 211, 211);
 }
 
-
 .photo-container img{
     border-radius: 5px;
     max-height: 25rem;
     box-shadow: 15px 15px 30px rgba(0,0,0,0.4);
 }
-
-
 
 /* Education */ 
 #education-page{
@@ -233,7 +242,6 @@ nav .logo-container a{
     text-align:left;
     padding: 1rem;
 }
-
 
 
 .timeline-content h4{ /* Fonts */
@@ -350,7 +358,15 @@ nav .logo-container a{
 }
 
 
+/* Project */
+#project-page{
+    display:none;
+}
 
+/* Certification */
+#certification-page{
+    display:none;
+}
 
 
 @media(max-width:600px){
@@ -377,8 +393,9 @@ nav .logo-container a{
         font-weight: 400;
     }
     .clipboard-msg{
-        width:3.5rem;
+        width:5rem;
         border-radius: 3px;
+        font-size:0.5rem;
     }
 
     /* Landing Page */
