@@ -31,7 +31,12 @@ li{
 }
 
 /* Utility */
-
+.disable-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 .bg-glass{
     background: rgba(50, 50, 50, 0.7);
 }
@@ -78,8 +83,6 @@ a:hover{
     position: absolute;
     left:17%;
     top:-40%;
-
-
 }
 .clip:hover > .clipboard-msg{
     visibility: visible;
@@ -95,9 +98,17 @@ a:hover{
 .date-tag{
     display:inline-block;
     background:rgba(70,70,130);
-    font-size:0.8rem;
+    font-size:80%;
+    text-align: center;
+    margin-top:0.2rem;
 }
 
+.fa-calendar-alt{
+    font-size:100%;
+}
+.bg-lightblue{
+    background-color:steelblue;
+}
 
 /* Navigation */
 header{
@@ -165,7 +176,9 @@ nav .logo-container a{
 }
 
 .selection-control:hover{
+    padding-bottom:0.25rem;
     border-bottom: #f4f4f4 solid 4px;
+    transition:0.25s;
 }
 
 .showcase-container{
@@ -371,6 +384,12 @@ nav .logo-container a{
 }
 
 
+.engraved{
+    font-size:80%;
+    color:rgb(255, 217, 0);
+    font-weight:470;
+}
+
 @media(max-width:600px){
     /* fonts */
     h2{
@@ -395,9 +414,9 @@ nav .logo-container a{
         font-weight: 400;
     }
     .clipboard-msg{
-        width:5rem;
+        width:4rem;
         border-radius: 3px;
-        font-size:0.5rem;
+        font-size:0.7rem;
     }
 
     /* Landing Page */
